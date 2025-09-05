@@ -1,3 +1,5 @@
+*This project was created for my brother's school project, aimed at fostering mental wellness among teens.*
+
 # TheraHome: Teen Zone
 
 ## Overview
