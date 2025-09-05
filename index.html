@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheraHome: Teen Zone - Your Safe Space for Mental Wellness</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">TheraHome</span>
+          <span class="logo-subtitle">Teen Zone</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#therabot" class="nav-link">TheraBot</a></li>
+          <li><a href="#theramind" class="nav-link">TheraMind</a></li>
+          <li><a href="#theraspace" class="nav-link">TheraSpace</a></li>
+          <li><a href="#features" class="nav-link">Coming Soon</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="floating-bubble bubble-1"></div>
+        <div class="floating-bubble bubble-2"></div>
+        <div class="floating-bubble bubble-3"></div>
+        <div class="floating-bubble bubble-4"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to Your Safe Space</h1>
+        <p class="hero-description">
+          TheraHome: Teen Zone isn't just another mental wellness app. It's a
+          sanctuary created by teens who understand what you're going through,
+          for teens who need someone to listen without judgment. We believe that
+          healing starts with feeling heard, and sometimes the hardest battles
+          are the ones nobody else can see. Whether you're dealing with the
+          pressure of school, complicated friendships, family tensions, or just
+          trying to figure out who you are in this chaotic world, we're here for
+          you. This is your space to breathe, to feel, and to grow at your own
+          pace.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToSection('therabot')">
+            Start Chatting
+          </button>
+          <button class="btn-secondary" onclick="scrollToSection('about')">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="glass-card about-card">
+          <h2 class="section-title">Our Story</h2>
+          <p class="about-text">
+            TheraHome was born from a simple but powerful realization: teens
+            need mental health support that actually gets them. Founded by a
+            group of high school students who experienced firsthand the
+            challenges of navigating adolescent mental health, we knew there had
+            to be a better way. We've all been there—sitting in counselor's
+            offices that felt too clinical, using apps designed by people who
+            haven't been teenagers in decades, or worse, suffering in silence
+            because we didn't know where to turn.
+          </p>
+          <p class="about-text">
+            Our founder's journey began during a particularly dark sophomore
+            year, when anxiety and depression felt overwhelming and the existing
+            resources felt inadequate. After countless nights of journaling,
+            meditation attempts, and conversations with friends going through
+            similar struggles, the vision for TheraHome became clear. We needed
+            a space that combined professional mental health techniques with the
+            authentic understanding that only comes from lived experience. A
+            place where CBT meets TikTok generation sensibilities, where
+            meditation doesn't feel boring, and where it's okay to not be okay.
+          </p>
+          <p class="about-text">
+            Today, TheraHome serves thousands of teens across the country,
+            offering evidence-based tools wrapped in an interface that feels
+            like home. We're not trying to replace therapy—we're here to bridge
+            the gap between struggling alone and seeking professional help.
+            Because sometimes, the first step to healing is just having a safe
+            place to start.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TheraBot Section -->
+    <section id="therabot" class="feature-section">
+      <div class="container">
+        <div class="feature-header">
+          <h2 class="section-title">TheraBot</h2>
+          <p class="feature-description">
+            Meet TheraBot, your AI companion who's always here to listen.
+            Powered by advanced AI technology, TheraBot offers a judgment-free
+            space for you to express whatever's on your mind. Whether you need
+            to vent about a tough day, work through confusing emotions, or just
+            want someone to talk to at 3 AM when sleep won't come, TheraBot is
+            here. Think of it as your digital friend who never gets tired of
+            listening, never judges, and always responds with empathy and
+            understanding. Every conversation is private and secure, because
+            your thoughts deserve to be protected.
+          </p>
+        </div>
+        <div class="chat-interface glass-card">
+          <div class="chat-header">
+            <div class="chat-status">
+              <span class="status-dot"></span>
+              <span>TheraBot is Online</span>
+            </div>
+          </div>
+          <div class="chat-messages" id="therabot-messages">
+            <div class="message bot-message">
+              <div class="message-avatar">🤗</div>
+              <div class="message-content">
+                Hey there! I'm TheraBot, and I'm really glad you're here. This
+                is your safe space to share whatever's on your mind. How are you
+                feeling today?
+              </div>
+            </div>
+          </div>
+          <div class="chat-input-container">
+            <input
+              type="text"
+              id="therabot-input"
+              class="chat-input"
+              placeholder="Type your message here..."
+            />
+            <button class="send-btn" onclick="sendTherabotMessage()">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TheraMind Section -->
+    <section id="theramind" class="feature-section alt-bg">
+      <div class="container">
+        <div class="feature-header">
+          <h2 class="section-title">TheraMind</h2>
+          <p class="feature-description">
+            TheraMind brings the power of Cognitive Behavioral Therapy (CBT)
+            right to your fingertips, but in a way that actually makes sense for
+            your life. We know that traditional CBT worksheets can feel like
+            homework, and that's the last thing you need when you're already
+            stressed. That's why TheraMind transforms these proven techniques
+            into interactive, engaging exercises that help you understand your
+            thoughts and emotions better. It's like having a therapist's toolkit
+            in your pocket, ready to help you challenge negative thought
+            patterns, process difficult emotions, and build healthier coping
+            mechanisms—all at your own pace and in your own words.
+          </p>
+        </div>
+        <div class="theramind-interface glass-card">
+          <div class="thought-tracker">
+            <h3 class="interface-title">Thought Check-In</h3>
+            <p class="interface-subtitle">
+              Let's work through what you're thinking and feeling right now.
+            </p>
+
+            <div class="thought-step" id="step-1">
+              <label class="thought-label"
+                >What's the situation that's bothering you?</label
+              >
+              <textarea
+                class="thought-input"
+                id="situation-input"
+                placeholder="Describe what happened or what's going on..."
+              ></textarea>
+            </div>
+
+            <div class="thought-step" id="step-2" style="display: none">
+              <label class="thought-label"
+                >What thoughts are going through your mind?</label
+              >
+              <textarea
+                class="thought-input"
+                id="thoughts-input"
+                placeholder="What are you telling yourself about this situation?"
+              ></textarea>
+            </div>
+
+            <div class="thought-step" id="step-3" style="display: none">
+              <label class="thought-label"
+                >How are these thoughts making you feel?</label
+              >
+              <div class="emotion-grid">
+                <button class="emotion-btn" data-emotion="anxious">
+                  😰 Anxious
+                </button>
+                <button class="emotion-btn" data-emotion="sad">😢 Sad</button>
+                <button class="emotion-btn" data-emotion="angry">
+                  😠 Angry
+                </button>
+                <button class="emotion-btn" data-emotion="confused">
+                  😕 Confused
+                </button>
+                <button class="emotion-btn" data-emotion="hopeless">
+                  😞 Hopeless
+                </button>
+                <button class="emotion-btn" data-emotion="worried">
+                  😟 Worried
+                </button>
+              </div>
+            </div>
+
+            <div class="thought-step" id="step-4" style="display: none">
+              <div class="cbt-response" id="cbt-response"></div>
+            </div>
+
+            <div class="thought-navigation">
+              <button
+                class="nav-btn"
+                id="prev-btn"
+                onclick="previousStep()"
+                style="display: none"
+              >
+                Previous
+              </button>
+              <button
+                class="nav-btn primary"
+                id="next-btn"
+                onclick="nextStep()"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TheraSpace Section -->
+    <section id="theraspace" class="feature-section">
+      <div class="container">
+        <div class="feature-header">
+          <h2 class="section-title">TheraSpace</h2>
+          <p class="feature-description">
+            TheraSpace is your personal sanctuary within the app—a private,
+            customizable area designed just for you. Here, you can track your
+            moods to identify patterns and triggers, practice guided relaxation
+            exercises when anxiety strikes, collect daily affirmations that
+            resonate with your journey, or simply doodle and create when words
+            aren't enough. Think of it as your digital journal, meditation
+            cushion, art therapy session, and support system all rolled into
+            one. Every element of TheraSpace is designed to adapt to your needs,
+            whether you need a moment of calm in a chaotic day or a creative
+            outlet for emotions you can't quite name yet.
+          </p>
+        </div>
+        <div class="theraspace-interface">
+          <div class="space-grid">
+            <div class="space-card glass-card" onclick="openMoodTracker()">
+              <div class="space-icon">📊</div>
+              <h3 class="space-title">Mood Tracker</h3>
+              <p class="space-desc">
+                Track your emotional journey and discover patterns in your
+                feelings over time.
+              </p>
+            </div>
+            <div class="space-card glass-card" onclick="openRelaxation()">
+              <div class="space-icon">🧘</div>
+              <h3 class="space-title">Relaxation</h3>
+              <p class="space-desc">
+                Guided breathing exercises and calming techniques for when you
+                need to find your center.
+              </p>
+            </div>
+            <div class="space-card glass-card" onclick="openAffirmations()">
+              <div class="space-icon">✨</div>
+              <h3 class="space-title">Affirmations</h3>
+              <p class="space-desc">
+                Daily personalized affirmations to remind you of your strength
+                and worth.
+              </p>
+            </div>
+            <div class="space-card glass-card" onclick="openDoodle()">
+              <div class="space-icon">🎨</div>
+              <h3 class="space-title">Creative Doodle</h3>
+              <p class="space-desc">
+                Express yourself through art when words aren't enough.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mood Tracker Modal -->
+    <div id="mood-modal" class="modal">
+      <div class="modal-content glass-card">
+        <span class="close-modal" onclick="closeMoodTracker()">&times;</span>
+        <h3 class="modal-title">How are you feeling today?</h3>
+        <div class="mood-selector">
+          <div class="mood-option" data-mood="1">😔</div>
+          <div class="mood-option" data-mood="2">😕</div>
+          <div class="mood-option" data-mood="3">😐</div>
+          <div class="mood-option" data-mood="4">🙂</div>
+          <div class="mood-option" data-mood="5">😊</div>
+        </div>
+        <textarea
+          class="mood-note"
+          placeholder="Want to add a note about today?"
+        ></textarea>
+        <button class="btn-primary" onclick="saveMood()">
+          Save Today's Mood
+        </button>
+      </div>
+    </div>
+
+    <!-- Relaxation Modal -->
+    <div id="relaxation-modal" class="modal">
+      <div class="modal-content glass-card">
+        <span class="close-modal" onclick="closeRelaxation()">&times;</span>
+        <h3 class="modal-title">Breathing Exercise</h3>
+        <div class="breathing-circle" id="breathing-circle">
+          <span class="breathing-text" id="breathing-text">Click to Start</span>
+        </div>
+        <p class="relaxation-guide">
+          Follow the circle as it grows and shrinks. Breathe in as it expands,
+          hold, then breathe out as it contracts.
+        </p>
+      </div>
+    </div>
+
+    <!-- Coming Soon Features -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2 class="section-title">More Features Rolling Out Soon</h2>
+        <p class="features-intro">
+          We're constantly working to expand TheraHome with new features
+          designed by teens, for teens. Each upcoming feature has been carefully
+          planned based on community feedback and real needs. While these aren't
+          available just yet, we're excited to share what's coming to make your
+          mental wellness journey even more supported and personalized.
+        </p>
+        <div class="features-grid">
+          <div class="feature-card glass-card coming-soon">
+            <div class="coming-soon-badge">Coming Soon</div>
+            <div class="feature-icon">🛍️</div>
+            <h3 class="feature-name">TheraStore</h3>
+            <p class="feature-info">
+              Your wellness marketplace where mental health meets everyday life.
+              TheraStore will offer carefully curated products that support your
+              journey—from journals designed for emotional processing to comfort
+              items that help with anxiety. Every product will be teen-tested
+              and therapist-approved, because we believe that healing can be
+              supported by the right tools in your physical space too.
+            </p>
+          </div>
+          <div class="feature-card glass-card coming-soon">
+            <div class="coming-soon-badge">Coming Soon</div>
+            <div class="feature-icon">🎙️</div>
+            <h3 class="feature-name">TheraVoices</h3>
+            <p class="feature-info">
+              Real stories from real teens who've walked similar paths.
+              TheraVoices will be our podcast and story-sharing platform where
+              you can listen to others who've faced similar challenges and
+              emerged stronger. Sometimes the most powerful therapy is knowing
+              you're not alone, and hearing someone else put words to feelings
+              you couldn't express yourself.
+            </p>
+          </div>
+          <div class="feature-card glass-card coming-soon">
+            <div class="coming-soon-badge">Coming Soon</div>
+            <div class="feature-icon">🥗</div>
+            <h3 class="feature-name">TheraNutrition</h3>
+            <p class="feature-info">
+              Understanding the mind-body connection through mindful eating.
+              TheraNutrition will help you explore how food affects your mood
+              without the toxic diet culture. We'll provide recipes for comfort
+              foods that nourish, snacks that help with anxiety, and guidance on
+              eating intuitively—because taking care of your body is part of
+              taking care of your mind.
+            </p>
+          </div>
+          <div class="feature-card glass-card coming-soon">
+            <div class="coming-soon-badge">Coming Soon</div>
+            <div class="feature-icon">📸</div>
+            <h3 class="feature-name">TheraMoments</h3>
+            <p class="feature-info">
+              Capture and celebrate the small victories that matter.
+              TheraMoments will be your private photo journal where you can
+              document your journey—the good days, the challenging ones, and
+              everything in between. With prompts for gratitude, achievement
+              tracking, and visual mood boarding, it's about recognizing that
+              healing isn't linear, and every moment of progress counts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4 class="footer-title">TheraHome: Teen Zone</h4>
+            <p class="footer-text">
+              Created by teens, for teens. Your safe space for mental wellness,
+              available whenever you need it. Remember, you're not alone in this
+              journey.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Connect With Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">📱</a>
+              <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+              <a href="#" class="social-link" aria-label="Spotify">🎵</a>
+              <a href="#" class="social-link" aria-label="TikTok">🎬</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Support</h4>
+            <p class="footer-text">
+              Need help? Reach out at<br />
+              support@therahome.com<br />
+              Crisis? Call 988 (Suicide & Crisis Lifeline)
+            </p>
+          </div>
+        </div>
+        <div class="footer-disclaimer">
+          <p>
+            TheraHome: Teen Zone is a mental wellness support tool and is not a
+            replacement for professional therapy or medical treatment. If you're
+            experiencing a mental health emergency, please call 988 or go to
+            your nearest emergency room. Your wellbeing matters, and
+            professional help is always available when you need it.
+          </p>
+          <p class="footer-copyright">
+            © 2024 TheraHome: Teen Zone. All rights reserved. Made with 💜 by
+            Sujal Sokande.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
